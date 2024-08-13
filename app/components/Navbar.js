@@ -7,6 +7,7 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => (
   <AppBar position="static" sx={{ backgroundColor: "#00796b" }}>
@@ -14,12 +15,17 @@ const Navbar = () => (
       <Typography variant="h6" sx={{ flexGrow: 1 }}>
         Flashcard SaaS
       </Typography>
-      <Button color="inherit" href="/sign-in" sx={{ mx: 1 }}>
-        Login
-      </Button>
-      <Button color="inherit" href="/sign-up" sx={{ mx: 1 }}>
-        Sign Up
-      </Button>
+      <SignedOut>
+        <Button color="inherit" href="/sign-in" sx={{ mx: 1 }}>
+          Login
+        </Button>
+        <Button color="inherit" href="/sign-up" sx={{ mx: 1 }}>
+          Sign Up
+        </Button>
+      </SignedOut>
+      <SignedIn>
+        <UserButton/>
+      </SignedIn>
     </Toolbar>
   </AppBar>
 );

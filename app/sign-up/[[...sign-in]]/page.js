@@ -22,13 +22,6 @@ const SignUpPage = () => {
         <Container maxWidth="xs">
           <Box sx={{ mb: 4, textAlign: "center" }}>
             <Typography
-              component="h1"
-              variant="h4"
-              sx={{ fontWeight: "bold", color: "#0d47a1" }}
-            >
-              Welcome to Flashcard SaaS
-            </Typography>
-            <Typography
               component="h2"
               variant="h6"
               sx={{ color: "#0d47a1", mt: 1 }}
@@ -83,6 +76,22 @@ const SignUpPage = () => {
           overflow: "hidden",
         }}
       >
+        <Box
+          sx={{
+            position: "absolute",
+            top: 50,
+            color: "#fff",
+            textAlign: "center",
+          }}
+        >
+          <Typography
+            component="h1"
+            variant="h4"
+            sx={{ fontWeight: "bold" }}
+          >
+            Welcome to Flashcard SaaS
+          </Typography>
+        </Box>
         <Box
           component="img"
           src="/images/signup-illustration.png" // Replace this with your actual image path
