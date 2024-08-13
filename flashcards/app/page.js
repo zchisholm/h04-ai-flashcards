@@ -10,22 +10,7 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-
-const Navbar = () => (
-  <AppBar position="static" sx={{ backgroundColor: "#00796b" }}>
-    <Toolbar>
-      <Typography variant="h6" sx={{ flexGrow: 1 }}>
-        Flashcard SaaS
-      </Typography>
-      <Button color="inherit" href="/sign-in" sx={{ mx: 1 }}>
-        Login
-      </Button>
-      <Button color="inherit" href="/sign-up" sx={{ mx: 1 }}>
-        Sign Up
-      </Button>
-    </Toolbar>
-  </AppBar>
-);
+import Navbar from "./components/Navbar";
 
 const HeroSection = () => (
   <Box
