@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
-import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Flashcard SaaS",
+  title: "Flashcard AI SaaS",
   description: "AI-powered Flashcard Creation Tool",
 };
 
